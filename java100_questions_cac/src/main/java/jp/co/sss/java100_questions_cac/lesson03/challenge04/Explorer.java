@@ -64,9 +64,25 @@ public class Explorer {
 		int fullLength = 300;
 		int member = 0;
 
-
 		//ここにwhile文を利用した処理を記述
+		//while文をmember変数が5出ないあいだ実行
+		while (member != 5) {
+			System.out.println(member + 1 + "人目が渡り始めたよ");
+			//while文を渡っている人がいる間実行
+			while (fullLength != 0) {
 
+				fullLength -= 50;
+
+				//もし渡っている人がいるのなら
+				if (fullLength != 0) {
+					System.out.println("まだ渡ってるよ");
+				}
+			}
+			//次の隊員のスタート地点にLengthを合わせる
+			fullLength = 300;
+			//member変数に1を加算して、1人渡り切ったことにする。
+			member += 1;
+		}
 
 		System.out.println("全員渡り終わったよ！");
 

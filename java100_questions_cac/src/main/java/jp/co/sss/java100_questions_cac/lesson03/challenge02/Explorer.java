@@ -61,9 +61,15 @@ public class Explorer {
 		int targetCans = 50;
 		int inputCans = 0;
 
-
 		//ここにfor文を利用した処理を記述
-
+		//for文を三回回す
+		for (int i = 0; i < 3; i++) {
+			System.out.println("あと" + i + "回！");
+			//入力された値を整数化して、inputCansに加算
+			String cans = br.readLine();
+			int icans = Integer.parseInt(cans);
+			inputCans += icans;
+		}
 
 		if (inputCans >= targetCans) {
 			System.out.println("\n隊長：");

@@ -22,5 +22,13 @@
 package jp.co.sss.java100_questions_cac.lesson01.challenge03;
 
 public class Patisserie {
-
+	public static void main(String[] args) {
+		int num1 = 0, num2 = 0, num3 = 0;
+		num1 = 30;
+		num2 = 30;
+		num3 = 30;
+		System.out.println("シトロン　　　\\250・・・残り" + num1 + "個");
+		System.out.println("ショコラ　　　\\280・・・残り" + num2 + "個");
+		System.out.println("ピスターシュ　\\320・・・残り" + num3 + "個");
+	}
 }
